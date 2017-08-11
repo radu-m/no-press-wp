@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [
+    "../scss/colorpicker.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA,uBACc"
+}
