@@ -289,6 +289,36 @@ function register_no_press_vc_shortcodes()
     ));
 
     /**
+     * HEADER PICKER
+     */
+    $args = array(
+        'post_type' => 'header',
+        'post_status' => 'publish',
+        'suppress_filters' => false
+    );
+    $footers = [];
+    foreach (get_posts($args) as $header) {
+        $headers[$header->post_title] = $header->post_name;
+    };
+    vc_map(array(
+        "name" => __("Header (NoPress)", "no-press-vc"),
+        "base" => "no_press_header_picker",
+        "class" => "",
+        "category" => __("NoPress", "no-press-vc"),
+        "params" => array(
+            array(
+                'type' => 'dropdown',
+                'heading' => __('Header for page or post', 'js_composer'),
+                'param_name' => 'np_header',
+                'value' => $headers,
+                'description' => empty($headers) ? __('No published posts of type Header were found.', 'js_composer') : __('Select header for this page or post.', 'js_composer'),
+                'admin_label' => true,
+                'save_always' => true,
+            )
+        )
+    ));
+
+    /**
      * FORM PICKER
      */
     $args = array(

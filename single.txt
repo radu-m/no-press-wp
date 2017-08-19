@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" prefix="og: http://ogp.me/ns#">
+    <head>
+        <title>
+            home
+        </title>
+
+        <meta prefix="og: http://ogp.me/ns#" name="author" content="radium"/>
+        <meta prefix="og: http://ogp.me/ns#" property="og:title" content="home"/>
+        <meta prefix="og: http://ogp.me/ns#" property="og:description" content=""/>
+        <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://www.0.0.0.0:8080/wp-includes/images/media/default.png"/>
+        <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://www.no-press.com/?post_type=header&p=25&preview=true">
+
+        <meta prefix="og: http://ogp.me/ns#" name="twitter:card" content="summary_large_image">
+        <meta prefix="og: http://ogp.me/ns#" name="twitter:site" content="@no-press">
+        <meta prefix="og: http://ogp.me/ns#" name="twitter:creator" content="@no-press"/>
+        <meta prefix="og: http://ogp.me/ns#" property="twitter:title" content="home"/>
+        <meta prefix="og: http://ogp.me/ns#" property="twitter:description" content=""/>
+        <meta prefix="og: http://ogp.me/ns#" property="twitter:image" content="http://www.0.0.0.0:8080/wp-includes/images/media/default.png"/>
+    </head>
+
+    <body>
+        <h1>
+            <a href="http://www.no-press.com/?post_type=header&p=25&preview=true">home</a>
+        </h1>
+
+        <p>
+            <a href="http://www.no-press.com/?post_type=header&p=25&preview=true">
+                <img src="http://www.0.0.0.0:8080/wp-includes/images/media/default.png" alt=""/>
+            </a>
+        </p>
+
+        <p>
+            
+        </p>
+    </body>
+</html>

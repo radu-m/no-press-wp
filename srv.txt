@@ -1,0 +1,42 @@
+Array
+(
+    [SERVER_SOFTWARE] => Apache/2.4.10 (Debian)
+    [REQUEST_URI] => /?post_type=header&p=25&preview=true
+    [HTTP_HOST] => 0.0.0.0:8080
+    [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.5
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_REFERER] => http://0.0.0.0:8080/wp-admin/post.php?post=25&action=edit&lang
+    [HTTP_COOKIE] => wp-settings-time-1=1502920904; wp-settings-1=urlbutton%3Dnone%26editor%3Dtinymce%26template_window_vcUIPanelWidth%3D1509%26template_window_vcUIPanelLeft%3D188px%26template_window_vcUIPanelTop%3D74px%26edit_element_vcUIPanelWidth%3D840%26edit_element_vcUIPanelLeft%3D753px%26edit_element_vcUIPanelTop%3D74px%26libraryContent%3Dbrowse; pmaCookieVer=5; pma_lang=en; pma_collation_connection=utf8mb4_unicode_ci; pmaUser-1=%7B%22iv%22%3A%224btZfV%5C%2Fhqc26XVNjKaxAQw%3D%3D%22%2C%22mac%22%3A%228fa98b45fdf43151f1392d98d2eb783702521c03%22%2C%22payload%22%3A%22Xs55gp8YB7lJ%2B03uJreTMA%3D%3D%22%7D; wordpress_logged_in_55a3fb2f82d41e7da94a846b85d85960=radium%7C1503891725%7CFw8LpvMZQsdI3BuwFXtc4go4WWNKfevnyrlU2weB5iJ%7C19b6853677a2128d2fa35e74dbd5f546797ae499a3b1b5b39c8530c007d88499; _icl_current_admin_language=en; _icl_current_language=en
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    [SERVER_SIGNATURE] => <address>Apache/2.4.10 (Debian) Server at 0.0.0.0 Port 8080</address>
+
+    [SERVER_NAME] => 0.0.0.0
+    [SERVER_ADDR] => 172.18.0.4
+    [SERVER_PORT] => 8080
+    [REMOTE_ADDR] => 172.18.0.1
+    [DOCUMENT_ROOT] => /var/www/html
+    [REQUEST_SCHEME] => http
+    [CONTEXT_PREFIX] => 
+    [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+    [SERVER_ADMIN] => webmaster@localhost
+    [SCRIPT_FILENAME] => /var/www/html/index.php
+    [REMOTE_PORT] => 54642
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => post_type=header&p=25&preview=true
+    [SCRIPT_NAME] => /index.php
+    [PHP_SELF] => /index.php
+    [REQUEST_TIME_FLOAT] => 1502969253.328
+    [REQUEST_TIME] => 1502969253
+    [argv] => Array
+        (
+            [0] => post_type=header&p=25&preview=true
+        )
+
+    [argc] => 1
+)

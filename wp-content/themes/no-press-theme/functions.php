@@ -151,8 +151,8 @@ function no_press_button_reg($attrs)
     $buttonAction = $a['button-action'] != '' ? $a['button-action'] : ($a['button-link'] != '' ? 'followUrl()' : false);
 
     return <<<CONTENT
-    <button no-press-button="{$a['button-label']}"
-        class="no-press-btn {$a['button-class']}"
+    <button np-button="{$a['button-label']}"
+        class="np-btn {$a['button-class']}"
         button-action="{$buttonAction}"
         button-url="{$cleanUrl}">
     </button>
@@ -273,6 +273,23 @@ function no_press_footer_picker_reg($attrs)
 //    return apply_filters('the_content', get_page_by_path($a['page_footer'], OBJECT, 'footer')->post_content);
     return <<<CONTENT
     <div class="{$a['page_footer']}" page-footer="{$a['page_footer']}">
+    {$fc}
+    </div>
+CONTENT;
+}
+
+add_shortcode('no_press_header_picker', 'no_press_header_picker_reg');
+function no_press_header_picker_reg($attrs)
+{
+    $a = shortcode_atts(array(
+        "np_header" => ''
+    ), $attrs);
+
+    $fc = apply_filters('the_content', get_page_by_path($a['np_header'], OBJECT, 'header')->post_content);
+
+//    return apply_filters('the_content', get_page_by_path($a['np_header'], OBJECT, 'header')->post_content);
+    return <<<CONTENT
+    <div class="{$a['np_header']}" np-header="{$a['np_header']}">
     {$fc}
     </div>
 CONTENT;
@@ -520,35 +537,7 @@ if (isset($_GET['activated']) && is_admin()){
     }
 }
 
-function enable_plugins() {
-
-    // Full path to WordPress from the root
-    $wordpress_path = '/full/path/to/wordpress/';
-
-    // Absolute path to plugins dir
-    $plugin_path = $wordpress_path.'wp-content/plugins/';
-
-    // Absolute path to your specific plugin
-    $my_plugin = $plugin_path.'my_plugin/my_plugin.php';
-
-    // Check to see if plugin is already active
-    if(is_plugin_active($my_plugin)) {
-
-        // Deactivate plugin
-        // Note that deactivate_plugins() will also take an
-        // array of plugin paths as a parameter instead of
-        // just a single string.
-        deactivate_plugins($my_plugin);
-    }
-    else {
-
-        // Activate plugin
-        activate_plugin($my_plugin);
-    }
-}
-
 if (isset($_GET['activated']) && is_admin()){
-    enable_plugins();
    
     // Set the blog page
     $blog = get_page_by_title( 'Blog' );

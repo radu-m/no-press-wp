@@ -1,3 +1,6 @@
+# fix ffor not finding static front-page by page slug
+# RedirectMatch 301 /home /
+
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
