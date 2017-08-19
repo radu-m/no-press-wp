@@ -131,7 +131,7 @@ function refactor_json($data)
     // test case
 //    $content = $data['post']['content'];
 //    $t = array("one", "two", "3", 4);
-//    $data = ["1st" => $t, "2nd" => $t, "3rd" => $t, "4th" => $t, "5th" => array($t, "Mads Frost, PhD, is also a post doctoral researcher at the IT University of Copenhagen (ITU). He successfully defended his PhD dissertation in 2014 on the topic of Personal Health Technologies. In 2013, Mads co-founded NoPress based on this research. To learn more visit <a href=\"http://madsfrost.dk/\">http://madsfrost.dk/</a>.")];
+//    $data = ["1st" => $t, "2nd" => $t, "3rd" => $t, "4th" => $t, "5th" => array($t, "lorem ipsum dolor sit ament")];
 
     function unsafe_arr_walk_recursive($arr, $recursion = 0)
     {
