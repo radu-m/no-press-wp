@@ -506,7 +506,7 @@ function register_no_press_vc_shortcodes()
     );
 
     $pages = [];
-    foreach(get_pages() as $page){
+    foreach (get_pages() as $page) {
         $pages[$page->post_title] = $page->post_name;
     }
 

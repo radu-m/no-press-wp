@@ -60,12 +60,14 @@ function add_no_press_theme_filters()
         $controllers[] = 'downloads';
         return $controllers;
     }
+
     add_filter('json_api_controllers', 'add_downloads_controller');
 
     function set_downloads_controller_path()
     {
         return no_press_json_api_dir() . "/controllers/downloads.php";
     }
+
     add_filter('json_api_downloads_controller_path', 'set_downloads_controller_path');
 
     ///
@@ -74,12 +76,14 @@ function add_no_press_theme_filters()
         $controllers[] = 'locale';
         return $controllers;
     }
+
     add_filter('json_api_controllers', 'add_locale_controller');
 
     function set_locale_controller_path()
     {
         return no_press_json_api_dir() . "/controllers/locale.php";
     }
+
     add_filter('json_api_locale_controller_path', 'set_locale_controller_path');
 
     ///
@@ -88,12 +92,14 @@ function add_no_press_theme_filters()
         $controllers[] = 'menus';
         return $controllers;
     }
+
     add_filter('json_api_controllers', 'add_menus_controller');
 
     function set_menus_controller_path()
     {
         return no_press_json_api_dir() . "/controllers/menus.php";
     }
+
     add_filter('json_api_menus_controller_path', 'set_menus_controller_path');
 
     ///
@@ -102,12 +108,14 @@ function add_no_press_theme_filters()
         $controllers[] = 'no_press_posts';
         return $controllers;
     }
+
     add_filter('json_api_controllers', 'add_no_press_posts_controller');
 
     function set_no_press_posts_controller_path()
     {
         return no_press_json_api_dir() . "/controllers/no-press-posts.php";
     }
+
     add_filter('json_api_no_press_posts_controller_path', 'set_no_press_posts_controller_path');
 
     ///
@@ -116,12 +124,14 @@ function add_no_press_theme_filters()
         $controllers[] = 'forms';
         return $controllers;
     }
+
     add_filter('json_api_controllers', 'add_forms_controller');
 
     function set_forms_controller_path()
     {
         return no_press_json_api_dir() . "/controllers/forms.php";
     }
+
     add_filter('json_api_forms_controller_path', 'set_forms_controller_path');
 
 }
@@ -192,11 +202,11 @@ function get_node_details($n)
         "nodeType" => $n->nodeType
     );
 
-/*    if($details['value']){
-        print_r('>>>>>>>');
-        print_r($details['value']);
-        print_r('<<<<<<<');
-    }*/
+    /*    if($details['value']){
+            print_r('>>>>>>>');
+            print_r($details['value']);
+            print_r('<<<<<<<');
+        }*/
 
     // remove empty nodes
     // will be false for elements that can have children and null for those which can't
